@@ -97,7 +97,7 @@
             if (isPanningRight && self.positiveLeftToRight) {
                 [self finishInteractiveTransition];
             } else if (isPanningRight && !self.positiveLeftToRight) {
-                [self cancelInteractiveTransition];
+                [self finishInteractiveTransition];
             } else if (!isPanningRight && self.positiveLeftToRight) {
                 [self cancelInteractiveTransition];
             } else if (!isPanningRight && !self.positiveLeftToRight) {
